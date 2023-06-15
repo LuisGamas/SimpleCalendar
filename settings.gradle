@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral() // Maven Central repository
+        gradlePluginPortal() // Gradle Plugin Portal
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral() // Maven Central repository
+        maven { url 'https://jitpack.io' } // JitPack repository (https://jitpack.io)
+    }
+}
+rootProject.name = "Simple CalendarView"
+include ':app'
+include ':SimpleCalendar'

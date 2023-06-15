@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="?attr/colorOnSurface"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <gamas.dev.simplecalendar.view.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:orientation="horizontal"
+        app:firstDayOfTheWeek="sunday"
+        android:layout_above="@id/ll_settings"
+        android:layout_below="@id/appbar_layout">
+
+    </gamas.dev.simplecalendar.view.CalendarView>
+
+    <LinearLayout
+        android:id="@+id/ll_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_orientation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkedButton="@+id/rb_horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horizontal"
+                android:textColor="?attr/colorOnSurface"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vertical"
+                android:textColor="?attr/colorOnSurface" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_selection_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkedButton="@+id/rb_single">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single"
+                android:textColor="?attr/colorOnSurface" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_multiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiple"
+                android:textColor="?attr/colorOnSurface" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/range"
+                android:textColor="?attr/colorOnSurface" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"
+                android:textColor="?attr/colorOnSurface" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

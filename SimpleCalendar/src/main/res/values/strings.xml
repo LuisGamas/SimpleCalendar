@@ -1,0 +1,15 @@
+<!--
+  ~ /*
+  ~  *
+  ~  * Copyright (c) 2022.  Luis Gamas <luisgamas@ik.me>
+  ~  * All rights reserved.
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">Simple Calendar</string>
+    <string name="back_button_description">Go Back Months Calendar</string>
+    <string name="fordward_button_description">Go Next Months Calendar</string>
+    <string name="close_button_description">Close Calendar Dialog</string>
+    <string name="done_button_description">Close and done Calendar Dialog</string>
+</resources>

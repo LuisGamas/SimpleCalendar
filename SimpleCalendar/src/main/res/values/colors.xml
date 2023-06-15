@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Colors of Dark Scheme from Material Deign 3 (Material You)-->
+
+    <color name="colorAccent">#6750A4</color> <!--colorPrimary MD3-->
+    <color name="colorPrimary">#FFFFFF</color> <!--colorOnPrimary MD3-->
+    <color name="colorPrimaryDark">#EADDFF</color> <!--colorPrimaryContainer MD3-->
+
+    <color name="default_calendar_background_color">#FEF7FF</color> <!--colorSurface MD3-->
+    <color name="default_month_text_color">#1D1B20</color> <!--colorOnSurface MD3-->
+    <color name="default_other_day_text_color">#E7E0EC</color> <!--colorSurfaceVariant MD3-->
+    <color name="default_day_text_color">#1D1B20</color> <!--colorOnSurface MD3-->
+    <color name="default_weekend_day_text_color">#6750A4</color> <!--colorPrimary MD3-->
+    <color name="default_week_day_title_text_color">#1D1B20</color> <!--colorOnSurface MD3-->
+    <color name="default_selected_day_text_color">#FFFFFF</color> <!--colorOnPrimary MD3-->
+    <color name="default_selected_day_background_color">#6750A4</color> <!--colorPrimary MD3-->
+    <color name="default_selected_day_background_start_color">#B69DF8</color> <!--colorPrimary70 or colorPrimary MD3-->
+    <color name="default_selected_day_background_end_color">#9A82DB</color> <!--colorPrimary60 or colorPrimary MD3-->
+    <color name="default_connected_day_text_color">#B3261E</color> <!--colorError MD3-->
+    <color name="default_connected_day_selected_text_color">#B3261E</color> <!--colorError MD3-->
+    <color name="default_disabled_day_text_color">#E7E0EC</color> <!--colorSurfaceVariant MD3-->
+    <color name="default_border_color">#79747E</color> <!--colorOutline MD3-->
+    <color name="default_selection_bar_month_title_text_color">#1D1B20</color> <!--colorOnSurface MD3-->
+
+</resources>
