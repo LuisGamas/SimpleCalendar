@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace 'gamas.dev.simplecalendar' // package name of the module to be published
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         minSdk 26
-        targetSdk 33
+        targetSdk 34
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

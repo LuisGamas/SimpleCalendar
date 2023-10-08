@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'gamas.dev.simplecalendarview'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "gamas.dev.simplecalendarview"
         minSdk 26
-        targetSdk 33
+        targetSdk 34
         /**
          * INCREMENT THIS IF YOU WANT TO RELEASE UPDATES
          */
