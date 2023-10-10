@@ -10,9 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google() // Google's Maven repository
         mavenCentral() // Maven Central repository
-        maven { url 'https://jitpack.io' } // JitPack repository (https://jitpack.io)
     }
 }
-rootProject.name = "Simple CalendarView"
+rootProject.name = "SimpleCalendarView"
 include ':app'
 include ':SimpleCalendar'

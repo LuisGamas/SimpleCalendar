@@ -22,7 +22,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <gamas.dev.simplecalendar.view.CalendarView
+    <io.github.luisgamas.simplecalendar.view.CalendarView
         android:id="@+id/calendar_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
         android:layout_above="@id/ll_settings"
         android:layout_below="@id/appbar_layout">
 
-    </gamas.dev.simplecalendar.view.CalendarView>
+    </io.github.luisgamas.simplecalendar.view.CalendarView>
 
     <LinearLayout
         android:id="@+id/ll_settings"

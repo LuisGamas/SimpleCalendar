@@ -136,3 +136,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 SimpleCalendar/proguard-rules.pro
+private_key.pepk

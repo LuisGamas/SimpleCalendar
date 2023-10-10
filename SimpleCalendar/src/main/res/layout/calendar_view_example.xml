@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <gamas.dev.simplecalendar.view.CalendarView
+    <io.github.luisgamas.simplecalendar.view.CalendarView
         android:id="@+id/gcalendar_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +22,6 @@
         app:orientation="horizontal"
         app:selectionType="range">
 
-    </gamas.dev.simplecalendar.view.CalendarView>
+    </io.github.luisgamas.simplecalendar.view.CalendarView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
