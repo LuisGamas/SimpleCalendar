@@ -34,7 +34,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import io.github.luisgamas.simplecalendar.FetchMonthsAsyncTask;
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.adapter.MonthAdapter;
 import io.github.luisgamas.simplecalendar.listeners.OnMonthChangeListener;
 import io.github.luisgamas.simplecalendar.model.Day;

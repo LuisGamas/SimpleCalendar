@@ -3,7 +3,7 @@ package io.github.luisgamas.simplecalendar.adapter.viewholder;
 import android.view.View;
 import android.widget.TextView;
 
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.model.Day;
 import io.github.luisgamas.simplecalendar.view.CalendarView;
 

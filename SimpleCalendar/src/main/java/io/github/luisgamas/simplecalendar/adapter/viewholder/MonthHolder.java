@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.OrientationHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.adapter.DaysAdapter;
 import io.github.luisgamas.simplecalendar.model.Month;
 import io.github.luisgamas.simplecalendar.settings.SettingsManager;

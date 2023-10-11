@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.adapter.MonthAdapter;
 import io.github.luisgamas.simplecalendar.adapter.viewholder.DayHolder;
 import io.github.luisgamas.simplecalendar.model.Day;

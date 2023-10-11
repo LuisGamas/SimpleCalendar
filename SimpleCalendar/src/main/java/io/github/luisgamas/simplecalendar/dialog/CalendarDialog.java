@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 import java.util.List;
 import java.util.Set;
 
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.model.Day;
 import io.github.luisgamas.simplecalendar.settings.appearance.AppearanceInterface;
 import io.github.luisgamas.simplecalendar.settings.date.DateInterface;

@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.model.Day;
 import io.github.luisgamas.simplecalendar.view.CalendarView;
 import io.github.luisgamas.simplecalendar.view.customviews.CircleAnimationTextView;

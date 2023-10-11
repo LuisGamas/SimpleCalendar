@@ -4,7 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import gamas.dev.simplecalendar.R;
+import io.github.luisgamas.simplecalendar.R;
 import io.github.luisgamas.simplecalendar.adapter.viewholder.OtherDayHolder;
 import io.github.luisgamas.simplecalendar.model.Day;
 import io.github.luisgamas.simplecalendar.view.CalendarView;
