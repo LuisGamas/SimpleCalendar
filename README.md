@@ -36,7 +36,7 @@ This is a slightly modified and updated fork for recent versions of OracleJDK an
 
 * Java
   ```xml
-        implementation 'io.github.luisgamas:simplecalendar:{version}'
+    implementation 'io.github.luisgamas:simplecalendar:{version}'
   ```
 
 * Version
