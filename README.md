@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/github/license/LuisGamas/SimpleCalendar?style=for-the-badge&logo=opensourceinitiative&logoColor=%23000000&labelColor=%23FFFFFF)
 ](https://opensource.org/license/mit/)
-<a href='' target="_blank"><img alt='android' src='https://img.shields.io/badge/Android_Library-100000?style=for-the-badge&logo=android&logoColor=88FF8C&labelColor=FFFFFF&color=494949'/></a>
+<img alt='android' src='https://img.shields.io/badge/Android_Library-100000?style=for-the-badge&logo=android&logoColor=88FF8C&labelColor=FFFFFF&color=494949'/></a>
 
 
 This is a slightly modified and updated fork for recent versions of OracleJDK and Android SDK of CosmoCalendar library, the original library and more details can be found at https://github.com/ApplikeySolutions/CosmoCalendar by [Applikey Solutions](https://applikeysolutions.com)
@@ -41,7 +41,7 @@ This is a slightly modified and updated fork for recent versions of OracleJDK an
 
 * Version
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.luisgamas.simplecalendar/simplecalendar?style=for-the-badge)](https://central.sonatype.com/artifact/io.github.luisgamas.simplecalendar/simplecalendar)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.luisgamas/simplecalendar?style=for-the-badge)](https://central.sonatype.com/artifact/io.github.luisgamas/simplecalendar)
 
 
 
