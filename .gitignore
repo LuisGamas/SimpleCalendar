@@ -137,3 +137,14 @@ crashlytics-build.properties
 fabric.properties
 SimpleCalendar/proguard-rules.pro
 private_key.pepk
+gradle.properties
+SimpleCalendar/build.gradle
+SimpleCalendar/secring.gpg
+gradle.properties
+SimpleCalendar/build.gradle
+SimpleCalendar/java_pid14640.hprof
+SimpleCalendar/java_pid4704.hprof
+java_pid10780.hprof
+java_pid3204.hprof
+SimpleCalendar/build.gradle
+gradle.properties
