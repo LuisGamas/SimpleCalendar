@@ -25,7 +25,7 @@ public class RangeSelectionManager extends BaseSelectionManager {
             tempDay = day;
             days = null;
         } else {
-            if (tempDay == day) {
+            if (day.equals(tempDay)) {
                 return;
             }
             if (tempDay.getCalendar().getTime().before(day.getCalendar().getTime())) {
