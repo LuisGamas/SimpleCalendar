@@ -16,7 +16,7 @@ public class CalendarListsModel implements CalendarListsInterface {
     private DisabledDaysCriteria disabledDaysCriteria;
 
     //Custom connected days for displaying in calendar
-    private ConnectedDaysManager connectedDaysManager = ConnectedDaysManager.getInstance();
+    private ConnectedDaysManager connectedDaysManager = new ConnectedDaysManager();
 
     private Set<Long> weekendDays = new HashSet() {{
         add(Calendar.SUNDAY);
