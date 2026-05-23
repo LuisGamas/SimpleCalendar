@@ -278,6 +278,24 @@ For the full API reference including all methods, models, enums, and detailed ex
 
 ---
 
+## ❤️ Support
+
+If you find SimpleCalendar useful, consider supporting its development:
+
+<div align="center">
+  <a href="https://www.buymeacoffee.com/luisgamas" style="margin: 0 15px;">
+    <img src="https://raw.githubusercontent.com/LuisGamas/buttons-design/main/buy_me_a_coffe/buy_me_a_coffe_fill.png" width="220" alt="Buy Me a Coffee" />
+  </a>
+  <a href="https://www.paypal.com/donate/?hosted_button_id=NYCR5M6QHZ7JC" style="margin: 0 15px;">
+    <img src="https://raw.githubusercontent.com/LuisGamas/buttons-design/main/paypal/paypal_fill.png" width="220" alt="Donate via PayPal" />
+  </a>
+  <a href="https://github.com/sponsors/LuisGamas" style="margin: 0 15px;">
+    <img src="https://raw.githubusercontent.com/LuisGamas/buttons-design/main/github_sponsor/github_sponsor_fill.png" width="220" alt="Sponsor on GitHub" />
+  </a>
+</div>
+
+---
+
 ## License
 
 MIT License — Copyright (c) 2023 Luis Donaldo Gamas
