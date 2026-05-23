@@ -1,0 +1,48 @@
+# Publishes SimpleCalendar to Maven Central via the Portal Publisher API.
+#
+# Prerequisites — set these GitHub Actions secrets:
+#   MAVEN_CENTRAL_USERNAME     — Portal token username (from central.sonatype.com)
+#   MAVEN_CENTRAL_PASSWORD     — Portal token password
+#   SIGNING_KEY                — ASCII-armored GPG private key
+#   SIGNING_KEY_ID             — Last 8 chars of the GPG key id
+#   SIGNING_KEY_PASSPHRASE     — GPG key passphrase
+
+name: Publish to Maven Central
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Run quality checks
+        run: ./gradlew lintRelease testRelease --no-configuration-cache
+
+      - name: Publish and release to Maven Central
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_KEY_PASSPHRASE }}
+        run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache --no-daemon

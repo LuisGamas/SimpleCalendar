@@ -1,0 +1,33 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# EXAMPLE — gradle.properties (local)
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# Copy this file to one of these locations (do NOT commit credentials):
+#
+#   1. Project-level:  <project-root>/gradle.properties       (not recommended)
+#   2. User-level:     ~/.gradle/gradle.properties            (recommended for local dev)
+#   3. CI (GitHub):    Set as repository secrets — they become environment variables
+#
+# ─── Maven Central Portal credentials ────────────────────────────────────────
+# Generate your token at: https://central.sonatype.com → Settings → User Tokens
+#
+mavenCentralUsername=YOUR_PORTAL_TOKEN_USERNAME
+mavenCentralPassword=YOUR_PORTAL_TOKEN_PASSWORD
+
+# ─── GPG signing (local — keyring file) ──────────────────────────────────────
+# Option A: Secring file
+#
+signing.keyId=LAST_8_CHARS_OF_KEY_ID
+signing.password=YOUR_GPG_PASSPHRASE
+signing.secretKeyRingFile=/path/to/.gnupg/secring.gpg
+
+# Option B: In-memory key (preferred for CI, see DEPLOYMENT.md)
+# signingInMemoryKey=——BEGIN PGP PRIVATE KEY BLOCK——\n...long key...
+# signingInMemoryKeyId=LAST_8_CHARS_OF_KEY_ID
+# signingInMemoryKeyPassword=YOUR_GPG_PASSPHRASE
+
+# ─── Optional: enable automatic publishing ───────────────────────────────────
+# When set to true, `./gradlew publishToMavenCentral` will also release
+# the deployment (no need to click "Publish" in the web UI).
+#
+# mavenCentralAutomaticPublishing=true

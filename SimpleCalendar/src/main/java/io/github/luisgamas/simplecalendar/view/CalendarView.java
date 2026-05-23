@@ -404,6 +404,7 @@ public class CalendarView extends RelativeLayout implements OnDaySelectedListene
     }
 
     public void setSelectionManager(BaseSelectionManager selectionManager) {
+        cancelAsyncTask();
         this.selectionManager = selectionManager;
         monthAdapter.setSelectionManager(selectionManager);
         update();
@@ -507,6 +508,12 @@ public class CalendarView extends RelativeLayout implements OnDaySelectedListene
         }
 
         asyncTask.execute(new FetchMonthsAsyncTask.FetchParams(future, month, settingsManager, monthAdapter, SettingsManager.DEFAULT_MONTH_COUNT));
+    }
+
+    private void cancelAsyncTask() {
+        if (asyncTask != null && !asyncTask.isCancelled()) {
+            asyncTask.cancel(false);
+        }
     }
 
     @Override
@@ -621,6 +628,7 @@ public class CalendarView extends RelativeLayout implements OnDaySelectedListene
     }
 
     private void recreateInitialMonth() {
+        cancelAsyncTask();
         monthAdapter.getData().clear();
         monthAdapter.getData().addAll(CalendarUtils.createInitialMonths(settingsManager));
         lastVisibleMonthPosition = SettingsManager.DEFAULT_MONTH_COUNT / 2;
@@ -725,17 +733,24 @@ public class CalendarView extends RelativeLayout implements OnDaySelectedListene
 
     @Override
     public void setSelectionType(@SelectionType int selectionType) {
+        cancelAsyncTask();
         settingsManager.setSelectionType(selectionType);
+
+        //Clear old selections before replacing manager
+        BaseSelectionManager oldManager = selectionManager;
+        if (oldManager != null) {
+            oldManager.clearSelections();
+            if (oldManager instanceof MultipleSelectionManager) {
+                ((MultipleSelectionManager) oldManager).clearCriteriaList();
+            }
+        }
+
         setSelectionManager();
         monthAdapter.setSelectionManager(selectionManager);
         setSelectionBarVisibility();
 
-        //Clear selections and selection bar
+        //Clear selection bar
         multipleSelectionBarAdapter.setData(new ArrayList<SelectionBarItem>());
-        selectionManager.clearSelections();
-        if (selectionManager instanceof MultipleSelectionManager) {
-            ((MultipleSelectionManager) selectionManager).clearCriteriaList();
-        }
 
         update();
     }
@@ -893,6 +908,7 @@ public class CalendarView extends RelativeLayout implements OnDaySelectedListene
 
     @Override
     public void setCalendarOrientation(int calendarOrientation) {
+        cancelAsyncTask();
         clearSelections();
         settingsManager.setCalendarOrientation(calendarOrientation);
         setDaysOfWeekTitles();

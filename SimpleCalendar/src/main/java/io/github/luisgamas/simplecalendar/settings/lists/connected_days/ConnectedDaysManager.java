@@ -9,19 +9,10 @@ import io.github.luisgamas.simplecalendar.utils.DateUtils;
 
 public class ConnectedDaysManager {
 
-    private static ConnectedDaysManager mInstance = null;
-
     private List<ConnectedDays> connectedDaysList;
 
-    private ConnectedDaysManager() {
+    public ConnectedDaysManager() {
 
-    }
-
-    public static ConnectedDaysManager getInstance() {
-        if (mInstance == null) {
-            mInstance = new ConnectedDaysManager();
-        }
-        return mInstance;
     }
 
     public List<ConnectedDays> getConnectedDaysList() {
