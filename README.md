@@ -2,7 +2,7 @@
 
 # SimpleCalendar
 
-[![MIT License](https://img.shields.io/github/license/LuisGamas/SimpleCalendar?style=for-the-badge&logo=opensourceinitiative&logoColor=%23000000&labelColor=%23FFFFFF)](https://opensource.org/license/mit/)
+[![MIT License](https://img.shields.io/github/license/luisgamas/SimpleCalendar?style=for-the-badge&logo=opensourceinitiative&logoColor=%23000000&labelColor=%23FFFFFF)](https://opensource.org/license/mit/)
 ![Android Library](https://img.shields.io/badge/Android_Library-100000?style=for-the-badge&logo=android&logoColor=88FF8C&labelColor=FFFFFF&color=494949)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.luisgamas/simplecalendar?style=for-the-badge)](https://central.sonatype.com/artifact/io.github.luisgamas/simplecalendar)
 
@@ -284,13 +284,13 @@ If you find SimpleCalendar useful, consider supporting its development:
 
 <div align="center">
   <a href="https://sink.gamas.workers.dev/buymeacoffee" style="margin: 0 15px;">
-    <img src="https://raw.githubusercontent.com/LuisGamas/buttons-design/main/buy_me_a_coffe/buy_me_a_coffe_fill.png" width="220" alt="Buy Me a Coffee" />
+    <img src="https://raw.githubusercontent.com/luisgamas/buttons-design/main/buy_me_a_coffe/buy_me_a_coffe_fill.png" width="220" alt="Buy Me a Coffee" />
   </a>
   <a href="https://sink.gamas.workers.dev/paypal-donations" style="margin: 0 15px;">
-    <img src="https://raw.githubusercontent.com/LuisGamas/buttons-design/main/paypal/paypal_fill.png" width="220" alt="Donate via PayPal" />
+    <img src="https://raw.githubusercontent.com/luisgamas/buttons-design/main/paypal/paypal_fill.png" width="220" alt="Donate via PayPal" />
   </a>
   <a href="https://sink.gamas.workers.dev/github-sponsor" style="margin: 0 15px;">
-    <img src="https://raw.githubusercontent.com/LuisGamas/buttons-design/main/github_sponsor/github_sponsor_fill.png" width="220" alt="Sponsor on GitHub" />
+    <img src="https://raw.githubusercontent.com/luisgamas/buttons-design/main/github_sponsor/github_sponsor_fill.png" width="220" alt="Sponsor on GitHub" />
   </a>
 </div>
 

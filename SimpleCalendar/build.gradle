@@ -52,7 +52,7 @@ mavenPublishing {
         name.set(project.findProperty("POM_NAME") ?: "SimpleCalendar")
         description.set(project.findProperty("POM_DESCRIPTION") ?: "A highly customizable Android calendar widget.")
         inceptionYear.set(project.findProperty("POM_INCEPTION_YEAR") ?: "2023")
-        url.set(project.findProperty("POM_URL") ?: "https://github.com/LuisGamas/SimpleCalendar")
+        url.set(project.findProperty("POM_URL") ?: "https://github.com/luisgamas/SimpleCalendar")
 
         licenses {
             license {
@@ -66,14 +66,14 @@ mavenPublishing {
             developer {
                 id.set(project.findProperty("POM_DEVELOPER_ID") ?: "LuisGamas")
                 name.set(project.findProperty("POM_DEVELOPER_NAME") ?: "Luis Donaldo Gamas")
-                url.set(project.findProperty("POM_DEVELOPER_URL") ?: "https://github.com/LuisGamas")
+                url.set(project.findProperty("POM_DEVELOPER_URL") ?: "https://github.com/luisgamas")
             }
         }
 
         scm {
-            url.set(project.findProperty("POM_SCM_URL") ?: "https://github.com/LuisGamas/SimpleCalendar")
-            connection.set(project.findProperty("POM_SCM_CONNECTION") ?: "scm:git:git://github.com/LuisGamas/SimpleCalendar.git")
-            developerConnection.set(project.findProperty("POM_SCM_DEV_CONNECTION") ?: "scm:git:ssh://git@github.com/LuisGamas/SimpleCalendar.git")
+            url.set(project.findProperty("POM_SCM_URL") ?: "https://github.com/luisgamas/SimpleCalendar")
+            connection.set(project.findProperty("POM_SCM_CONNECTION") ?: "scm:git:git://github.com/luisgamas/SimpleCalendar.git")
+            developerConnection.set(project.findProperty("POM_SCM_DEV_CONNECTION") ?: "scm:git:ssh://git@github.com/luisgamas/SimpleCalendar.git")
         }
     }
 }
