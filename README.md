@@ -298,6 +298,6 @@ If you find SimpleCalendar useful, consider supporting its development:
 
 ## License
 
-MIT License — Copyright (c) 2023 Luis Donaldo Gamas
+MIT License — Copyright (c) 2017 Applikey Solutions & Copyright (c) 2023 Luis Donaldo Gamas
 
 See [LICENSE](LICENSE) for the full text.
